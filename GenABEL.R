@@ -19,16 +19,12 @@ data(ge03d2ex)
 # ***************                Summary                       
 # **************************************************************************** #
 
-# In this tutorial, we will:
-#   The descriptives family of functions was developed to facilitate the
-production of tables which can be directly used in a manuscript - it is
-possible to save the output as a file, which can be open by Excel or Word.
-See e.g. help(descriptives.trait) for details.
-. The inflation of test statistics compared to null (1 d.f.) may be estimated
-with estlambda function.
+# In this tutorial, we will use the descriptives family of functions to facilitate the
+# production of tables which can be directly used in a manuscript - it is
+# possible to save the output as a file, which can be open by Excel or Word.
 
 # **************************************************************************** #
-# ***************                Introduction                       
+# ***************                Data descriptives                       
 # **************************************************************************** #
 
 # Investigate the objects loaded by the command
@@ -42,10 +38,6 @@ names(phdata(ge03d2ex))
 
 # We can attach this data frame to the R search path by
 attach(phdata(ge03d2ex))
-
-# **************************************************************************** #
-# ***************                Data descriptives                       
-# **************************************************************************** #
 
 # Let us investigate which traits are present in the loaded data frame and what are
 # the characteristics of the distribution by using the GenABEL-package function
@@ -154,9 +146,9 @@ estlambda(an0[, "P1df"], plot=TRUE)
 
 plot(an0)
 
-The resulting plot is show in Figure 5.2. By default, ??? log10(P-value) of the
-uncorrected 1 d.f. test are shown; see thehelp to figure out how this behaviour
-can be changed. We can also add the corrected P-values to the plot with
+# The resulting plot is show in Figure 5.2. By default, ??? log10(P-value) of the
+# uncorrected 1 d.f. test are shown; see thehelp to figure out how this behaviour
+# can be changed. We can also add the corrected P-values to the plot with
 
 add.plot(an0, df="Pc1df", col=c("lightblue", "lightgreen"))
 
