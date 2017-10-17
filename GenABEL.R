@@ -4,7 +4,7 @@
 
 # URL:      http://www.genabel.org/packages
 # URL:      http://www.genabel.org/sites/default/files/pdfs/GenABEL-tutorial.pdf
-# Date:     Oct 10 2017
+# Date:     Oct 17 2017
 # Description: statistical analyses of polymorphic genome data 
 
 # **************************************************************************** #
